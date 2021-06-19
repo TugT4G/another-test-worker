@@ -11,7 +11,7 @@ name = "another-test-worker-dev"
 vars = { MODE = "dev" }
 route = "https://www.tips4gamers.com/*"
 kv_namespaces = [
-         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+         { binding = "KV", id = "MY_ID", preview_id = "MY_PREVIEW_ID" },
 ]
 
 [env.beta]
@@ -19,7 +19,7 @@ name = "another-test-worker-beta"
 vars = { MODE = "beta" }
 route = "https://www.tips4gamers.com/*"
 kv_namespaces = [
-         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+         { binding = "KV", id = "MY_ID", preview_id = "MY_PREVIEW_ID" },
 ]
 
 [env.prod]
@@ -27,5 +27,5 @@ name = "another-test-worker-prod"
 vars = { MODE = "prod" }
 route = "https://www.tips4gamers.com/*"
 kv_namespaces = [
-         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+         { binding = "KV", id = "MY_ID", preview_id = "MY_PREVIEW_ID" },
 ]
