@@ -1,0 +1,31 @@
+name = "another-test-worker"
+account_id = "MY_ID"
+route = "https://www.tips4gamers.com/*"
+zone_id = "MY_ID"
+workers_dev = true
+type = "webpack"
+webpack_config = "node_modules/@ampproject/cloudflare-optimizer-scripts/webpack.config.js"
+
+[env.dev]
+name = "another-test-worker-dev"
+vars = { MODE = "dev" }
+route = "https://www.tips4gamers.com/*"
+kv_namespaces = [
+         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+]
+
+[env.beta]
+name = "another-test-worker-beta"
+vars = { MODE = "beta" }
+route = "https://www.tips4gamers.com/*"
+kv_namespaces = [
+         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+]
+
+[env.prod]
+name = "another-test-worker-prod"
+vars = { MODE = "prod" }
+route = "https://www.tips4gamers.com/*"
+kv_namespaces = [
+         { binding = "KV", id = "MY_ID", preview_id = "MY_ID" },
+]
